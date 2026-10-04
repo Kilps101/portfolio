@@ -14,17 +14,24 @@
 </head>
 
 <body>
-  <nav class="nav">
-    <div class="navbar">
+  <nav>
+    <!-- Show only for narrow media sizes -->
+    <div class="navbar topbar">
       <span class="material-symbols-rounded">
         menu
       </span>
-      <div class="navbar-intro">
+    </div>
+
+    <!-- Show only for wide media sizes -->
+    <div class="navbar sidebar">
+      <span class="material-symbols-rounded">
+        menu
+      </span>
+      <div id="sidebar-intro" class="sidebar-intro">
         <%- include("./intro.ejs") %>
       </div>
+    </div>
 
-    </div>
-    </div>
     <div class="navbar-links">
       <a href="#projects">Projects</a>
       <a href="#experience">Professional Experience</a>
