@@ -16,26 +16,22 @@
 <body>
   <nav>
     <!-- Show only for narrow media sizes -->
-    <div class="navbar topbar">
-      <span class="material-symbols-rounded">
-        menu
-      </span>
-    </div>
+    <div class="topbar">
+      <button id="menu-btn" class="menu">
+        <span class="material-symbols-rounded">
+          menu
+        </span>
+      </button>
 
-    <!-- Show only for wide media sizes -->
-    <div class="navbar sidebar">
-      <span class="material-symbols-rounded">
-        menu
-      </span>
-      <div id="sidebar-intro" class="sidebar-intro">
-        <%- include("./intro.ejs") %>
+      <div id="nav-menu" class="nav-menu">
+        <%- include("./components/nav-menu.ejs") %>
       </div>
     </div>
-
-    <div class="navbar-links">
-      <a href="#projects">Projects</a>
-      <a href="#experience">Professional Experience</a>
-      <a href="#education">Certification & Education</a>
+    
+    <!-- Show only for wide media sizes -->
+    <div class="sidebar">
+      <%- include("./components/intro.ejs") %>
+      <%- include("./components/nav-menu.ejs") %>
     </div>
   </nav>
   <main>
