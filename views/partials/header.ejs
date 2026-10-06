@@ -17,17 +17,20 @@
   <nav>
     <!-- Show only for narrow media sizes -->
     <div class="topbar">
-      <button id="menu-btn" class="menu">
+      <!-- <button id="menu-btn" class="menu">
         <span class="material-symbols-rounded">
           menu
         </span>
+      </button> -->
+      <button class="menu-btn" id="menu-btn" aria-label="Toggle navigation" type="button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </button>
 
-      <div id="nav-menu" class="nav-menu">
-        <%- include("./components/nav-menu.ejs") %>
-      </div>
+      <%- include("./components/nav-menu.ejs") %>
     </div>
-    
+
     <!-- Show only for wide media sizes -->
     <div class="sidebar">
       <%- include("./components/intro.ejs") %>
