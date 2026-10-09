@@ -54,7 +54,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 99;
+  display: flex;
 }
 
 .topbar {
@@ -65,18 +65,11 @@ nav {
   width: 100vw;
   height: 3rem;
   background-color: #03346e;
-}
-
-button.menu {
-  background-color: #03346e;
-  border: none;
-  color: white;
-  font-size: 1.5rem;
-  padding: 0.5rem;
+  z-index: 99;
 }
 
 .nav-menu {
-  display: none;
+  display: flex;
   flex-direction: column;
   position: absolute;
   top: 100%;
@@ -88,15 +81,22 @@ button.menu {
   box-shadow:
     inset 0 10px 10px -10px rgba(0, 0, 0, 0.2),
     0 10px 10px -10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-100%);
+  opacity: 0;
+  transition:
+    transform 0.3s ease-out,
+    opacity 0.3s ease-out;
+  z-index: 98;
+}
+
+.nav-menu.active {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .nav-item {
   text-align: center;
   padding: 0.75rem 0;
-}
-
-.nav-menu.active {
-  display: flex;
 }
 
 /* Nav menu button */
@@ -171,7 +171,7 @@ button.menu {
 }
 
 .intro {
-  padding: 10vh 30vw;
+  padding: 4rem 2rem 1rem;
   text-align: center;
   min-height: 40vh;
 }

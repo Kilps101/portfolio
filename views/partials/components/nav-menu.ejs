@@ -1,5 +1,11 @@
-<ul id="nav-menu" class="nav-menu">
-  <li class="nav-item"><a href="#projects">Projects</a></li>
-  <li class="nav-item"><a href="#experience">Professional Experience</a></li>
-  <li class="nav-item"><a href="#education">Certification & Education</a></li>
+<ul class="nav-menu" id="nav-menu">
+  <% 
+    if (locals.navLinks) {
+      locals.navLinks.forEach(link => { 
+  %>
+  <li class="nav-item"><a href="<%= link.href %>"><%= link.text %></a></li>
+  <%   
+    });
+  } 
+  %>
 </ul>
