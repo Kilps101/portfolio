@@ -1,0 +1,10 @@
+{
+  "pageTitle": "Matt Kilpatrick",
+
+  "navLinks": [
+    { "text": "Home", "href": "/" },
+    { "text": "Projects", "href": "#projects" },
+    { "text": "Professional Experience", "href": "#experience" },
+    { "text": "Certification & Education", "href": "#education" }
+  ]
+}

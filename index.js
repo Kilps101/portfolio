@@ -1,29 +1,39 @@
 import express from "express";
 import bodyParser from "body-parser";
+import fs from 'fs/promises'; // Use const fs = require('fs').promises; for CommonJS
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 const app = express();
 const port = 3000;
 
 app.use(express.static("public"));
-
 app.use(bodyParser.urlencoded({ extended: true }));
 
-let pageTitle = "Matt Kilpatrick";
+// Recreate __dirname if using ES Modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-let navLinks = [
-  { text: "Home", href: "/" },
-  { text: "Projects", href: "#projects" },
-  { text: "Professional Experience", href: "#experience" },
-  { text: "Certification & Education", href: "#education" },
-];
+async function loadProjectJson() {
+  try {
+    // Construct absolute path relative to the current file
+    const filePath = path.join(__dirname, '/public/data/data.json'); 
+    
+    const rawData = await fs.readFile(filePath, 'utf8');
+    const jsonData = JSON.parse(rawData);
+    
+    return jsonData;
+  } catch (error) {
+    console.error('Error reading JSON file:', error);
+  }
+}
 
-let indexPageData = {
-  pageTitle: pageTitle,
-  navLinks: navLinks,
-};
+let pageData = await loadProjectJson();
+
+console.log(pageData);
 
 app.get("/", (req, res) => {
-  res.render("index.ejs", indexPageData);
+  res.render("index.ejs", pageData);
 });
 
 app.listen(port, () => {
