@@ -1,8 +1,8 @@
 import express from "express";
 import bodyParser from "body-parser";
-import fs from 'fs/promises'; // Use const fs = require('fs').promises; for CommonJS
-import path from 'path';
-import { fileURLToPath } from 'url';
+import fs from "fs/promises"; // Use const fs = require('fs').promises; for CommonJS
+import path from "path";
+import { fileURLToPath } from "url";
 
 const app = express();
 const port = 3000;
@@ -14,26 +14,22 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-async function loadProjectJson() {
+async function loadJsonData(jsonFileName) {
   try {
     // Construct absolute path relative to the current file
-    const filePath = path.join(__dirname, '/public/data/data.json'); 
-    
-    const rawData = await fs.readFile(filePath, 'utf8');
+    const filePath = path.join(__dirname, `/public/data/${jsonFileName}`);
+
+    const rawData = await fs.readFile(filePath, "utf8");
     const jsonData = JSON.parse(rawData);
-    
+
     return jsonData;
   } catch (error) {
-    console.error('Error reading JSON file:', error);
+    console.error("Error reading JSON file:", error);
   }
 }
 
-let pageData = await loadProjectJson();
-
-console.log(pageData);
-
-app.get("/", (req, res) => {
-  res.render("index.ejs", pageData);
+app.get("/", async (req, res) => {
+  res.render("index.ejs", await loadJsonData("index.json"));
 });
 
 app.listen(port, () => {

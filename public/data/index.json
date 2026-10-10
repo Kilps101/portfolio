@@ -1,0 +1,28 @@
+{
+  "pageTitle": "Matt Kilpatrick",
+
+  "navLinks": [
+    { "text": "Home", "href": "/" },
+    { "text": "Projects", "href": "#projects" },
+    { "text": "Professional Experience", "href": "#experience" },
+    { "text": "Certification & Education", "href": "#education" }
+  ],
+
+  "projects": [
+    {
+      "title": "Book Review App",
+      "imageUrl": "https://v3.brittanychiang.com/img/featured/interventions/interventions.png",
+      "description": "Here is a bit of text about this project and you might want to find out more..."
+    },
+    {
+      "title": "Name Length Checker",
+      "imageUrl": "https://v3.brittanychiang.com/img/featured/interventions/interventions.png",
+      "description": "Here is a bit of text about this project and you might want to find out more..."
+    },
+    {
+      "title": "Weather App",
+      "imageUrl": "https://v3.brittanychiang.com/img/featured/interventions/interventions.png",
+      "description": "Here is a bit of text about this project and you might want to find out more..."
+    }
+  ]
+}
