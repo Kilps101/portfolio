@@ -1,0 +1,38 @@
+<%- include("partials/header.ejs") %>
+<section id="experience" class="section experience">
+  <h2>Professional Experience</h2>
+  <ul class="panel">
+    <% 
+    if (locals.professionalExperience) {
+      locals.professionalExperience.forEach(job => { 
+  %>
+    <li class="tile">
+      <img src="<%= job.imageUrl %>" />
+      <div>
+        <h3><%= job.job %></h3>
+        <h4><%= job.role %></h4>
+      </div>
+      <div>
+        <p><%= job.company %></p>
+        <p class="small-text"><%= job.duration %></p>
+      </div>
+      <p><%= job.description %></p>
+      <ul>
+        <% 
+        if (job.responsibilities) {
+          job.responsibilities.forEach(responsibility => { 
+        %>
+        <li><%= responsibility %></li>
+        <%   
+        });
+      }
+      %>
+      </ul>
+    </li>
+    <%   
+    });
+  } 
+  %>
+  </ul>
+</section>
+<%- include("partials/footer.ejs") %>

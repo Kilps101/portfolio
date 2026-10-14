@@ -32,6 +32,10 @@ app.get("/", async (req, res) => {
   res.render("index.ejs", await loadJsonData("index.json"));
 });
 
+app.get("/experience", async (req, res) => {
+  res.render("experience.ejs", await loadJsonData("index.json"));
+});
+
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });

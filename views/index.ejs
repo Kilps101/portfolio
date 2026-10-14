@@ -24,6 +24,39 @@
 
 <section id="experience" class="section experience">
   <h2>Professional Experience</h2>
+  <ul class="panel">
+    <% 
+    if (locals.professionalExperience) {
+      locals.professionalExperience.forEach(job => { 
+  %>
+    <li class="tile">
+      <img class="small-image" src="<%= job.imageUrl %>" />
+      <div>
+        <h3><%= job.job %></h3>
+        <h4><%= job.role %></h4>
+      </div>
+      <div>
+        <p><%= job.company %></p>
+        <p class="small-text"><%= job.duration %></p>
+      </div>
+      <p><%= job.description %></p>
+      <ul>
+        <% 
+        if (job.responsibilities) {
+          job.responsibilities.forEach(responsibility => { 
+        %>
+        <li><%= responsibility %></li>
+        <%   
+        });
+      }
+      %>
+      </ul>
+    </li>
+    <%   
+    });
+  } 
+  %>
+  </ul>
 </section>
 
 <section id="education" class="section education">
@@ -38,7 +71,7 @@
       locals.workingRights.forEach(right => { 
   %>
     <li class="tile">
-      <img src="<%= right.imageUrl %>" />
+      <img class="medium-image" src="<%= right.imageUrl %>" />
       <p><%= right.description %></p>
     </li>
     <%   

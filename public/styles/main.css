@@ -15,7 +15,7 @@ body {
 body,
 a,
 footer {
-  color: #919599;
+  color: #7d8185;
   text-decoration: none;
 }
 
@@ -28,6 +28,30 @@ h2 {
   font-style: normal;
   margin: 0;
   color: #021526;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.small-text {
+  font-size: 0.8rem;
+  color: #919599;
 }
 
 button.action {
@@ -159,16 +183,6 @@ main {
   text-align: center;
 }
 
-h2 {
-  font-size: 1.5rem;
-  margin: 1rem;
-}
-
-h3 {
-  font-size: 1rem;
-  margin: 0;
-}
-
 /* Index page */
 main > :nth-child(2n) {
   background-color: rgb(252, 252, 252);
@@ -202,10 +216,11 @@ section {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  gap: 1.5rem;
   width: 85vw;
-  padding: 1rem 0;
-  list-style-type: none;
+  padding: 1.5rem 0;
   margin: 0;
+  list-style-type: none;
 }
 
 .tile:not(:last-child) {
@@ -213,8 +228,22 @@ section {
 }
 
 .tile * {
-  width: 85%;
-  margin: 0.7rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+  width: 95%;
+  padding: 0;
+  list-style-type: none;
+}
+
+.small-image {
+  width: 30%;
+}
+
+.medium-image {
+  width: 50%;
 }
 
 /* Intro */
@@ -222,10 +251,15 @@ section {
   display: none;
 }
 
+#intro-subtitle {
+  max-width: 20ch;
+  margin-bottom: 0;
+}
+
 #profile-image {
   width: 200px;
   border-radius: 50%;
-  margin: 0;
+  margin: 1.5rem;
 }
 
 /* Footer */
