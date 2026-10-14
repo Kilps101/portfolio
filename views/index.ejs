@@ -5,29 +5,21 @@
 
 <section id="projects" class="section projects">
   <h2>Projects</h2>
-  <div class="panel">
-    <div class="item">
-      <img src="https://v3.brittanychiang.com/img/featured/interventions/interventions.png" />
-      <p>
-        Here is a bit of text about this project and you might want to find out
-        more...
-      </p>
-    </div>
-    <div class="item">
-      <img src="https://v3.brittanychiang.com/img/featured/blistabloc/blistabloc.png" />
-      <p>
-        Here is a bit of text about this project and you might want to find out
-        more...
-      </p>
-    </div>
-    <div class="item">
-      <img src="https://v3.brittanychiang.com/img/featured/interventions/interventions.png" />
-      <p>
-        Here is a bit of text about this project and you might want to find out
-        more...
-      </p>
-    </div>
-  </div>
+  <ul class="panel">
+    <% 
+    if (locals.projects) {
+      locals.projects.forEach(project => { 
+  %>
+    <li class="tile">
+      <h3><%= project.title %></h3>
+      <img src="<%= project.imageUrl %>" />
+      <p><%= project.description %></p>
+    </li>
+    <%   
+    });
+  } 
+  %>
+  </ul>
 </section>
 
 <section id="experience" class="section experience">
@@ -40,16 +32,20 @@
 
 <section id="working-rights" class="section working-rights">
   <h2>Working Rights</h2>
-  <div class="panel">
-    <div class="item">
-      <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" />
-      <p>UK Citizen</p>
-    </div>
-    <div class="item">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Australia_%28converted%29.svg" />
-      <p>Permanent Resident of Australia</p>
-    </div>
-  </div>
+  <ul class="panel">
+    <% 
+    if (locals.workingRights) {
+      locals.workingRights.forEach(right => { 
+  %>
+    <li class="tile">
+      <img src="<%= right.imageUrl %>" />
+      <p><%= right.description %></p>
+    </li>
+    <%   
+    });
+  } 
+  %>
+  </ul>
 </section>
 
 <section id="contact" class="section contact">
