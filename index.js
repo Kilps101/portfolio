@@ -24,6 +24,7 @@ async function loadJsonData(jsonFileName) {
     const rawData = await fs.readFile(filePath, "utf8");
     const jsonData = JSON.parse(rawData);
 
+    console.log(jsonData);
     return jsonData;
   } catch (error) {
     console.error("Error reading JSON file:", error);
@@ -35,7 +36,7 @@ app.get("/", async (req, res) => {
 });
 
 app.get("/experience", async (req, res) => {
-  res.render("experience.ejs", await loadJsonData("index.json"));
+  res.render("experience.ejs", await loadJsonData("experience.json"));
 });
 
 app.listen(port, () => {

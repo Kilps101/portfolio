@@ -40,50 +40,45 @@
     }
   ],
 
-  "professionalExperience": [
-    {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/e/ee/Logo_of_the_Western_Australia_Police.svg",
-      "job": "Police Senior Constable",
-      "role": "General Duties Officer",
-      "company": "Western Australia Police, Perth, WA",
-      "duration": "September 2024 - Present",
-      "description": "Maintain public safety by providing armed policing presence to Perth Central Business District, in collaboration with external agencies. Conduct thorough investigations and present evidence to the Courts.",
-      "responsibilities": [
-        "Respond to emergency calls and provide assistance to the public.",
-        "Conduct investigations and gather evidence for criminal cases.",
-        "Collaborate with other law enforcement agencies to ensure public safety."
-      ]
-    },
-    {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/2/23/Sussex_Police_badge.svg",
-      "job": "Police Constable",
-      "role": "Roads Policing Officer",
-      "company": "Sussex Police, Sussex, UK",
-      "duration": "January 2023 - September 2024",
-      "description": "Provide specialist roads policing presence to promote road safety and disrupt criminal activity. Respond to traffic incidents and collisions of all severities. Emergency scene management and investigation.",
-      "responsibilities": [
-        "Manage scenes of serious-injury and fatal collisions",
-        "Support victims and/or their families",
-        "Pursue and apprehend criminal road users",
-        "Provide specialist advice to other policing teams"
-      ]
-    },
-    {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/b/bd/National_Police_Air_Service_logo.svg",
-      "job": "Police Constable",
-      "role": "Tactical Flight Training Officer",
-      "company": "National Police Air Service, UK",
-      "duration": "April 2017 - January 2023",
-      "description": "Awarded City & Guilds Level 3 Certificate in Learning and Development. All responsibilities of Tactical Flight Officer (below), as well as training and assessment of Constables new to the Tactical Flight Officer role; ongoing development and support of colleagues; and periodical assessment of colleagues in various disciplines including air support operations, crew resource management, use of emergency and safety equipment, and use of night vision imaging systems (NVIS).",
-      "responsibilities": [
-        "Deliver training and assess performance of individuals",
-        "Design and produce nationally implemented training material",
-        "Proactively seek opportunities to educate policing departments and external agencies on the capabilities and benefits of air support",
-        "Adapt delivery to meet individual learning styles",
-        "Maintain accurate professional development records"
-      ]
-    }
-  ],
+  "professionalExperience": {
+    "description": [
+      "Having dedicated myself to structured education around software development, I am seeking professional opportunities in this space.",
+
+      "Years of public sector work has exposed me to burdensome, clumsy software slowing processes and requiring workarounds. With this source of ‘inspiration by frustration’, combined with my logical, rational approach to problem solving, I have developed an ability to analyse and deconstruct real-world challenges, in order to design appropriate software structures to address them. I passionately believe that software should be intuitive, requiring minimal user input, enabling staff to concentrate on their core function and increasing organisational efficiency.",
+
+      "Having dealt with innumerable members of the public in almost every scenario imaginable across nearly two decades of policing, I have excellent communication, decision-making and problem-solving skills. You can read more about my policing experience <a href='/experience'>here</a>."
+    ],
+    "skills": [
+      {
+        "title": "Technical Skills",
+        "content": [
+          "HTML",
+          "CSS",
+          "Javascript",
+          "Typescript",
+          "React",
+          "NextJS",
+          "Node.js",
+          "PostgreSQL"
+        ]
+      },
+      {
+        "title": "Non-Technical Skills",
+        "content": [
+          "Problem solving",
+          "Communication",
+          "Perseverance",
+          "Patience",
+          "Task prioritisation",
+          "Adaptability",
+          "Resilience under pressure",
+          "Teamwork",
+          "Leadership",
+          "Conflict resolution"
+        ]
+      }
+    ]
+  },
 
   "workingRights": [
     {
