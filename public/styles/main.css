@@ -54,6 +54,12 @@ p {
   color: #919599;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 button.action {
   color: white;
   font-size: large;
@@ -220,7 +226,6 @@ section {
   width: 85vw;
   padding: 1.5rem 0;
   margin: 0;
-  list-style-type: none;
 }
 
 .tile:not(:last-child) {
@@ -235,7 +240,6 @@ section {
   gap: 0;
   width: 95%;
   padding: 0;
-  list-style-type: none;
 }
 
 .small-image {
