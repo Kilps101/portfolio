@@ -51,13 +51,13 @@
     "PostgreSQL"
   ],
 
-  "experience": {
+  "professionalExperience": {
     "description": [
-      "I have excellent <b>problem-solving</b>, <b>communication</b> and <b>leadership</b> skills, coupled with <b>adaptability</b>, <b>resilience</b> and <b>patience</b>, honed through nearly two decades of policing.",
+      "I have excellent <b>problem-solving</b>, <b>communication</b> and <b>leadership</b> skills, coupled with <b>adaptability</b>, <b>resilience</b> and <b>patience</b>, honed through nearly <a class='inline-link' href='/experience'>two decades of policing</a>.",
 
       "Beyond dealing with members of the public in almost every scenario imaginable, bringing order to the chaos of emergency incidents, I have designed, implemented and delivered national training courses and worked collaboratively with large organisations such as the UK Home Office, Airbus UK and Motorolla. I can confidently communicate with clients and stakeholders and all levels.",
 
-      "You can <a class='inline-link' href='/experience'>read more</a> about my policing experience, although I am now seeking professional opportunities in software development, having dedicated myself to structured education in this area."
+      "I am now seeking professional opportunities in software development, having dedicated myself to structured education in this area."
     ]
   },
 

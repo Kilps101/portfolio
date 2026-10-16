@@ -1,10 +1,10 @@
 <%- include("partials/header.ejs") %>
 <section id="experience" class="section experience">
-  <h2>Professional Experience</h2>
+  <h2>Policing Experience</h2>
   <ul class="panel">
     <% 
-    if (locals.professionalExperience) {
-      locals.professionalExperience.forEach(job => { 
+    if (locals.policingExperience) {
+      locals.policingExperience.forEach(job => { 
   %>
     <li class="tile">
       <img class="small-image" src="<%= job.imageUrl %>" />
