@@ -181,6 +181,71 @@ nav {
   transform: rotate(-45deg);
 }
 
+/* Accordion content */
+.accordion-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+  width: 95%;
+  height: 0;
+  padding: 0;
+  opacity: 0;
+  transition:
+    transform 0.3s ease-out,
+    opacity 0.3s ease-out;
+}
+
+.accordion-content.active {
+  height: 100%;
+  opacity: 1;
+}
+
+/* Accordion button */
+.accordion-btn {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.accordion-btn .h-bar,
+.accordion-btn .v-bar {
+  background-color: #919599;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.accordion-btn .h-bar {
+  height: 2px;
+  width: 100%;
+
+  grid-row: 2 / 3;
+  grid-column: 1 / 4;
+}
+
+.accordion-btn .v-bar {
+  height: 100%;
+  width: 2px;
+
+  grid-row: 1 / 4;
+  grid-column: 2 / 3;
+}
+
+/* Turns '+' into an '-' when active */
+.accordion-btn.active .v-bar {
+  height: 0;
+  opacity: 0.5;
+}
+
 /* Main content */
 main {
   display: flex;
@@ -236,7 +301,7 @@ section {
   border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 }
 
-.tile * {
+.tile > * {
   display: flex;
   flex-direction: column;
   justify-content: space-around;

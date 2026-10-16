@@ -4,7 +4,7 @@
   <ul class="panel">
     <% 
     if (locals.policingExperience) {
-      locals.policingExperience.forEach(job => { 
+      locals.policingExperience.forEach((job, index) => { 
   %>
     <li class="tile">
       <img class="small-image" src="<%= job.imageUrl %>" />
@@ -16,18 +16,27 @@
         <p><%= job.company %></p>
         <p class="small-text"><%= job.duration %></p>
       </div>
-      <p><%= job.description %></p>
-      <ul>
-        <% 
-        if (job.responsibilities) {
-          job.responsibilities.forEach(responsibility => { 
+      <div>
+        <button class="accordion-btn" id="accordion-btn-<%= index %>"
+                aria-label="Toggle accordion" aria-controls="accordion-content-<%= index %>" aria-expanded="false" type="button">
+          <span class="h-bar"></span>
+          <span class="v-bar"></span>
+        </button>
+      </div>
+      <div class="accordion-content" id="accordion-content-<%= index %>">
+        <p><%= job.description %></p>
+        <ul>
+          <% 
+          if (job.responsibilities) 
+          {job.responsibilities.forEach(responsibility => { 
+            %>
+          <li><%= responsibility %></li>
+          <% 
+            });
+            } 
         %>
-        <li><%= responsibility %></li>
-        <%   
-        });
-      }
-      %>
-      </ul>
+        </ul>
+      </div>
     </li>
     <%   
     });
