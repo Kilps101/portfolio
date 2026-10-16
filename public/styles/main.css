@@ -19,6 +19,10 @@ footer {
   text-decoration: none;
 }
 
+.inline-link {
+  color: #dd700b;
+}
+
 h1,
 h2 {
   font-family: "Montserrat", sans-serif;
@@ -135,7 +139,7 @@ nav {
   background: transparent;
   border: none;
   padding: 0;
-  margin: 0.5rem;
+  margin: 0 1rem;
 }
 
 .menu-btn .bar {

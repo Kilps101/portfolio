@@ -40,43 +40,24 @@
     }
   ],
 
-  "professionalExperience": {
+  "skills": [
+    "HTML",
+    "CSS",
+    "Javascript",
+    "Typescript",
+    "React",
+    "NextJS",
+    "Node.js",
+    "PostgreSQL"
+  ],
+
+  "experience": {
     "description": [
-      "Having dedicated myself to structured education around software development, I am seeking professional opportunities in this space.",
+      "I have excellent <b>problem-solving</b>, <b>communication</b> and <b>leadership</b> skills, coupled with <b>adaptability</b>, <b>resilience</b> and <b>patience</b>, honed through nearly two decades of policing.",
 
-      "Years of public sector work has exposed me to burdensome, clumsy software slowing processes and requiring workarounds. With this source of ‘inspiration by frustration’, combined with my logical, rational approach to problem solving, I have developed an ability to analyse and deconstruct real-world challenges, in order to design appropriate software structures to address them. I passionately believe that software should be intuitive, requiring minimal user input, enabling staff to concentrate on their core function and increasing organisational efficiency.",
+      "Beyond dealing with members of the public in almost every scenario imaginable, bringing order to the chaos of emergency incidents, I have designed, implemented and delivered national training courses and worked collaboratively with large organisations such as the UK Home Office, Airbus UK and Motorolla. I can confidently communicate with clients and stakeholders and all levels.",
 
-      "Having dealt with innumerable members of the public in almost every scenario imaginable across nearly two decades of policing, I have excellent communication, decision-making and problem-solving skills. You can read more about my policing experience <a href='/experience'>here</a>."
-    ],
-    "skills": [
-      {
-        "title": "Technical Skills",
-        "content": [
-          "HTML",
-          "CSS",
-          "Javascript",
-          "Typescript",
-          "React",
-          "NextJS",
-          "Node.js",
-          "PostgreSQL"
-        ]
-      },
-      {
-        "title": "Non-Technical Skills",
-        "content": [
-          "Problem solving",
-          "Communication",
-          "Perseverance",
-          "Patience",
-          "Task prioritisation",
-          "Adaptability",
-          "Resilience under pressure",
-          "Teamwork",
-          "Leadership",
-          "Conflict resolution"
-        ]
-      }
+      "You can <a class='inline-link' href='/experience'>read more</a> about my policing experience, although I am now seeking professional opportunities in software development, having dedicated myself to structured education in this area."
     ]
   },
 

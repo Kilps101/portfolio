@@ -6,10 +6,7 @@
 <section id="projects" class="section projects">
   <h2>Projects</h2>
   <ul class="panel">
-    <% 
-    if (locals.projects) {
-      locals.projects.forEach(project => { 
-  %>
+    <% if (locals.projects) {locals.projects.forEach(project => { %>
     <li class="tile">
       <h3><%= project.title %></h3>
       <img src="<%= project.imageUrl %>" />
@@ -22,24 +19,18 @@
   </ul>
 </section>
 
+<section id="skills" class="section skills">
+  <h2>Technical Skills</h2>
+</section>
+
 <section id="experience" class="section experience">
   <h2>Professional Experience</h2>
   <ul class="panel">
-    <% professionalExperience.description.forEach(paragraph => { %>
+    <% experience.description.forEach(paragraph => { %>
     <p><%- paragraph %></p>
     <%
     });
     %>
-    <% professionalExperience.skills.forEach(skillSet => { %>
-    <h3><%= skillSet.title %></h3>
-    <ul>
-      <% skillSet.content.forEach(skill => { %>
-      <li><%= skill %></li>
-      <% }); %>
-    </ul>
-    <%
-    })
-    ;%>
   </ul>
 
 </section>
