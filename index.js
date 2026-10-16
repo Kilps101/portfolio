@@ -7,7 +7,7 @@ import { fileURLToPath } from "url";
 const app = express();
 const port = 3000;
 
-app.set('view engine', 'ejs');
+app.set("view engine", "ejs");
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -16,27 +16,35 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-async function loadJsonData(jsonFileName) {
-  try {
-    // Construct absolute path relative to the current file
-    const filePath = path.join(__dirname, `/public/data/${jsonFileName}`);
+async function loadJsonData(jsonFileNames) {
+  let jsonReturn = {};
 
-    const rawData = await fs.readFile(filePath, "utf8");
-    const jsonData = JSON.parse(rawData);
+  for (const jsonFileName of jsonFileNames) {
+    try {
+      // Construct absolute path relative to the current file
+      const filePath = path.join(__dirname, `/public/data/${jsonFileName}`);
 
-    console.log(jsonData);
-    return jsonData;
-  } catch (error) {
-    console.error("Error reading JSON file:", error);
+      const rawData = await fs.readFile(filePath, "utf8");
+      const jsonData = JSON.parse(rawData);
+
+      Object.assign(jsonReturn, jsonData);
+    } catch (error) {
+      console.error("Error reading JSON file:", error);
+    }
   }
+  console.log(jsonReturn);
+  return jsonReturn;
 }
 
 app.get("/", async (req, res) => {
-  res.render("index.ejs", await loadJsonData("index.json"));
+  res.render("index.ejs", await loadJsonData(["header.json", "index.json"]));
 });
 
 app.get("/experience", async (req, res) => {
-  res.render("experience.ejs", await loadJsonData("experience.json"));
+  res.render(
+    "experience.ejs",
+    await loadJsonData(["header.json", "experience.json"]),
+  );
 });
 
 app.listen(port, () => {

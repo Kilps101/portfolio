@@ -1,22 +1,4 @@
 {
-  "pageTitle": "Matt Kilpatrick",
-
-  "navLinks": [
-    { "text": "Home", "href": "/" },
-    { "text": "Projects", "href": "#projects" },
-    { "text": "Professional Experience", "href": "#experience" },
-    { "text": "Certification & Education", "href": "#education" }
-  ],
-
-  "intro": {
-    "title": "Hi, I'm Matt.",
-    "subtitle": "I build software that makes life easier.",
-    "imageUrl": "/images/profile.jpeg",
-    "introduction": "I am a software developer with a passion for building web applications. I have experience in both front-end and back-end development, and I enjoy working on projects that challenge me to learn new technologies.",
-    "button": { "text": "Let's work together!", "href": "#contact" },
-    "introductionOld": "I am a frontend leaning full stack developer with an enthusiasm for building web applications and a passion for learning new technologies. I have experience in a variety of programming languages and frameworks, and I am always looking to expand my skill set."
-  },
-  
   "policingExperience": [
     {
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/e/ee/Logo_of_the_Western_Australia_Police.svg",
