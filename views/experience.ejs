@@ -1,5 +1,5 @@
 <%- include("partials/header.ejs") %>
-<section id="experience" class="section experience">
+<section id="policing-experience" class="section policing-experience">
   <h2>Policing Experience</h2>
   <ul class="panel">
     <% 
@@ -18,7 +18,9 @@
       </div>
       <div>
         <button class="accordion-btn" id="accordion-btn-<%= index %>"
-                aria-label="Toggle accordion" aria-controls="accordion-content-<%= index %>" aria-expanded="false" type="button">
+                aria-label="Toggle accordion"
+                aria-controls="accordion-content-<%= index %>"
+                aria-expanded="false" type="button">
           <span class="h-bar"></span>
           <span class="v-bar"></span>
         </button>
@@ -30,6 +32,7 @@
           if (job.responsibilities) 
           {job.responsibilities.forEach(responsibility => { 
             %>
+          <p class="list-spacer">•</p>
           <li><%= responsibility %></li>
           <% 
             });
