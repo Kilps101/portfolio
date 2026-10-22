@@ -181,6 +181,18 @@ nav {
   transform: rotate(-45deg);
 }
 
+/* Main content */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  box-sizing: border-box;
+  padding-top: 3rem;
+  text-align: center;
+}
+
 /* Accordion content */
 .accordion-content {
   display: flex;
@@ -192,14 +204,17 @@ nav {
   height: 0;
   padding: 0;
   opacity: 0;
-  transition:
-    transform 0.3s ease-out,
-    opacity 0.3s ease-out;
+  overflow: hidden;
+  transition: opacity 0.3s ease-out;
 }
 
 .accordion-content.active {
   height: 100%;
   opacity: 1;
+}
+
+.list-spacer {
+  margin: 0.3rem 0;
 }
 
 /* Accordion button */
@@ -214,7 +229,7 @@ nav {
   border: none;
   padding: 0;
   margin: 0 1rem;
-  cursor: pointer;
+  z-index: 89;
 }
 
 .accordion-btn .h-bar,
@@ -246,18 +261,6 @@ nav {
   opacity: 0.5;
 }
 
-/* Main content */
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  box-sizing: border-box;
-  padding-top: 3rem;
-  text-align: center;
-}
-
 /* Index page */
 main > :nth-child(2n) {
   background-color: rgb(252, 252, 252);
@@ -270,10 +273,11 @@ section {
   align-items: center;
   width: 100vw;
   box-sizing: border-box;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.2);
   text-align: center;
+  scroll-margin-top: 3rem;
 }
 
 .panel {
@@ -345,7 +349,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  z-index: 98;
+  z-index: 97;
 }
 
 /* Extra small devices only (phones, 600px and down) */
