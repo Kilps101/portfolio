@@ -3,9 +3,9 @@
 
   "navLinks": [
     { "text": "Home", "href": "/" },
-    { "text": "Projects", "href": "#projects" },
-    { "text": "Professional Experience", "href": "#experience" },
-    { "text": "Certification & Education", "href": "#education" }
+    { "text": "Projects", "href": "/#projects" },
+    { "text": "Professional Experience", "href": "/#professional-experience" },
+    { "text": "Certification & Education", "href": "/#education" }
   ],
 
   "intro": {
