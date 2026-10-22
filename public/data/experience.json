@@ -41,6 +41,19 @@
         "Adapt delivery to meet individual learning styles",
         "Maintain accurate professional development records"
       ]
+    },
+      {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/b/bd/National_Police_Air_Service_logo.svg",
+      "job": "Police Constable",
+      "role": "Tactical Flight Officer",
+      "company": "National Police Air Service, UK",
+      "duration": "December 2014 - April 2017",
+      "description": "Police helicopter crew, responsible for tactical deployment of aerial assets to policing incidents and operations across the southeast of England and further afield as required. Airborne systems operation, navigation, communications, and incident management.",
+      "responsibilities": [
+        "Provide aerial policing response to major and critical incidents",
+        "Tactical direction of officers to achieve safe conclusion of high-risk operations",
+        "Management and maintenance of aircraft radio communications system software, in collaboration with external agencies"
+      ]
     }
   ]
 }
