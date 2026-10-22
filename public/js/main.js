@@ -43,14 +43,8 @@ document.querySelectorAll(".accordion-btn").forEach((button) => {
 
     // Toggle visibility
     targetContent.classList.toggle("active");
+
+    // Toggle button between + and -
     button.classList.toggle("active");
-
-    // // Optional: Close other open items (Single-expand behavior)
-    // document.querySelectorAll(".accordion-item").forEach((otherItem) => {
-    //   if (otherItem !== item) otherItem.classList.remove("active");
-    // });
-
-    // // Toggle the current item
-    // item.classList.toggle("active");
   });
 });
