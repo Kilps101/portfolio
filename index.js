@@ -17,23 +17,23 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 async function loadJsonData(jsonFileNames) {
-  let jsonReturn = {};
+  let jsonData = {};
 
   for (const jsonFileName of jsonFileNames) {
     try {
       // Construct absolute path relative to the current file
       const filePath = path.join(__dirname, `/public/data/${jsonFileName}`);
 
-      const rawData = await fs.readFile(filePath, "utf8");
-      const jsonData = JSON.parse(rawData);
+      const rawFileData = await fs.readFile(filePath, "utf8");
+      const jsonFileData = JSON.parse(rawFileData);
 
-      Object.assign(jsonReturn, jsonData);
+      Object.assign(jsonData, jsonFileData);
     } catch (error) {
       console.error("Error reading JSON file:", error);
     }
   }
-  console.log(jsonReturn);
-  return jsonReturn;
+  console.log(jsonData);
+  return jsonData;
 }
 
 app.get("/", async (req, res) => {
