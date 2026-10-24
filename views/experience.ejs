@@ -26,13 +26,13 @@
         </button>
       </div>
       <div class="accordion-content" id="accordion-content-<%= index %>">
-        <p><%= job.description %></p>
+        <span><%= job.description %></span>
         <ul>
           <% 
           if (job.responsibilities) 
           {job.responsibilities.forEach(responsibility => { 
             %>
-          <p class="list-spacer">•</p>
+          <span class="list-spacer">•</span>
           <li><%= responsibility %></li>
           <% 
             });
