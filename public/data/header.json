@@ -2,10 +2,12 @@
   "pageTitle": "Matt Kilpatrick",
 
   "navLinks": [
-    { "text": "Home", "href": "/" },
+    { "text": "About Me", "href": "/" },
     { "text": "Projects", "href": "/#projects" },
+    { "text": "Technical Skills", "href": "/#skills" },
     { "text": "Professional Experience", "href": "/#professional-experience" },
-    { "text": "Certification & Education", "href": "/#education" }
+    { "text": "Certification & Education", "href": "/#education" },
+    { "text": "Working Rights", "href": "/#working-rights" }
   ],
 
   "intro": {
