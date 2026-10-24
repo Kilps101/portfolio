@@ -22,7 +22,7 @@
 <section id="skills" class="section skills">
   <h2>Technical Skills</h2>
   <div class="panel">
-    <p>Some languages and frameworks I have worked with...</p>
+    <p>Some languages and frameworks I have worked with.</p>
     <ul class="tile block">
       <% if (locals.skills) {locals.skills.forEach(skill => { %>
       <li>
@@ -50,6 +50,18 @@
 
 <section id="education" class="section education">
   <h2>Certification & Education</h2>
+  <div class="panel">
+    <ul class="tile block">
+      <% if (locals.education) {locals.education.forEach(course => { %>
+      <li>
+        <span><%- course %></span>
+      </li>
+      <%   
+    });
+  };
+  %>
+    </ul>
+  </div>
 </section>
 
 <section id="working-rights" class="section working-rights">
