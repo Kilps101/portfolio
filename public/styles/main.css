@@ -385,10 +385,22 @@ footer {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
   /* Navigation */
   .topbar,
-  .main-intro {
+  #main-intro {
     display: none;
+  }
+
+  main {
+    padding-top: 0;
+  }
+
+  section {
+    scroll-margin-top: 0;
   }
 
   .sidebar {
@@ -421,10 +433,7 @@ footer {
     justify-content: flex-end;
     align-items: center;
   }
-}
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
   nav a:hover {
     color: #dd700b;
   }
