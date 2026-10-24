@@ -23,14 +23,38 @@
   ],
 
   "skills": [
-    "HTML",
-    "CSS",
-    "Javascript",
-    "Typescript",
-    "React",
-    "NextJS",
-    "Node.js",
-    "PostgreSQL"
+    {
+      "name": "HTML",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+    },
+    {
+      "name": "CSS",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg"
+    },
+    {
+      "name": "Javascript",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png"
+    },
+    {
+      "name": "Typescript",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
+    },
+    {
+      "name": "React",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+    },
+    {
+      "name": "NextJS",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg"
+    },
+    {
+      "name": "Node.js",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/Ionicons_logo-nodejs.svg"
+    },
+    {
+      "name": "PostgreSQL",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg"
+    }
   ],
 
   "professionalExperience": {

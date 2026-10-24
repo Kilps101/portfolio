@@ -21,6 +21,19 @@
 
 <section id="skills" class="section skills">
   <h2>Technical Skills</h2>
+  <div class="panel">
+    <p>Some languages and frameworks I have worked with...</p>
+    <ul class="tile block">
+      <% if (locals.skills) {locals.skills.forEach(skill => { %>
+      <li>
+        <img class="tiny-image" src="<%= skill.imageUrl %>" />
+      </li>
+      <%   
+    });
+  };
+  %>
+    </ul>
+  </div>
 </section>
 
 <section id="professional-experience" class="section professional-experience">

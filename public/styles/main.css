@@ -229,7 +229,6 @@ main {
   border: none;
   padding: 0;
   margin: 0 1rem;
-  z-index: 89;
 }
 
 .accordion-btn .h-bar,
@@ -273,7 +272,7 @@ section {
   align-items: center;
   width: 100vw;
   box-sizing: border-box;
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -313,6 +312,21 @@ section {
   gap: 0;
   width: 95%;
   padding: 0;
+}
+
+.block {
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-wrap: balance;
+}
+
+.block li {
+  width: fit-content;
+}
+
+.tiny-image {
+  width: 3rem;
+  height: 3rem;
 }
 
 .small-image {
@@ -378,6 +392,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+    z-index: 99;
   }
 
   nav {
@@ -389,7 +404,6 @@ footer {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 99;
   }
 
   .material-symbols-rounded {
