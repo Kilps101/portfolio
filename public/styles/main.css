@@ -51,6 +51,11 @@ h4 {
 
 p {
   margin: 0;
+  text-align: justify;
+}
+
+p:not(:last-of-type) {
+  margin-bottom: 1rem;
 }
 
 .small-text {
