@@ -71,6 +71,7 @@ ul {
 
 button.action {
   color: white;
+  font-size: large;
   background-color: #dd700b;
   padding: 5px;
   margin: 5px;
