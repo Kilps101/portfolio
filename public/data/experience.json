@@ -47,12 +47,51 @@
       "job": "Police Constable",
       "role": "Tactical Flight Officer",
       "company": "National Police Air Service, UK",
-      "duration": "December 2014 - April 2017",
+      "duration": "December 2013 - April 2017",
       "description": "Police helicopter crew, responsible for tactical deployment of aerial assets to policing incidents and operations across the southeast of England and further afield as required. Airborne systems operation, navigation, communications, and incident management.",
       "responsibilities": [
         "Provide aerial policing response to major and critical incidents",
         "Tactical direction of officers to achieve safe conclusion of high-risk operations",
         "Management and maintenance of aircraft radio communications system software, in collaboration with external agencies"
+      ]
+    },
+    {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/2/23/Sussex_Police_badge.svg",
+      "job": "Police Constable",
+      "role": "Response Investigation Team Officer",
+      "company": "Sussex Police, Sussex, UK",
+      "duration": "April 2013 - December 2013",
+      "description": "Investigation of crime including victim management, evidence gathering, suspect interviewing and court file preparation.",
+      "responsibilities": [
+        "Communicate with victims of crime to promote engagement and understanding throughout investigation",
+        "Accurately record and thoroughly investigate criminal matters",
+        "Produce evidential packages for presentation to the Courts"
+      ]
+    },
+    {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/2/23/Sussex_Police_badge.svg",
+      "job": "Police Constable",
+      "role": "Neighbourhood Response Team Officer",
+      "company": "Sussex Police, Sussex, UK",
+      "duration": "February 2009 - April 2013",
+      "description": "Respond to emergency and non-emergency calls for assistance from the public, providing reassurance and resolution in times of need. Conduct thorough investigations and present evidence to the Courts. Engage with public to understand community concerns and requirements.",
+      "responsibilities": [
+        "Provide immediate response to emergency incidents",
+        "Contribute to public safety and confidence in policing",
+        "Accurately record and thoroughly investigate criminal matters"
+      ]
+    },
+    {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/2/23/Sussex_Police_badge.svg",
+      "job": "Trainee Police Constable",
+      "role": "Probationer Development Unit",
+      "company": "Sussex Police, Sussex, UK",
+      "duration": "April 2008 - February 2009",
+      "description": "Work and learn under guidance of Tutor Constables to complete initial police training, achieving Foundation Certificate in Policing in Partnership with Communities and ‘Independent Patrol’ certification.",
+      "responsibilities": [
+        "Demonstrate understanding of policing fundamentals",
+        "Achieve all National Occupational Standards requirements",
+        "Contribute to self-development"
       ]
     }
   ]
