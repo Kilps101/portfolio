@@ -1,5 +1,5 @@
 <%- include("partials/header.ejs") %>
-<section id="main-intro" class="section intro">
+<section id="intro" class="section intro">
   <%- include("partials/components/intro.ejs") %>
 </section>
 
@@ -23,7 +23,7 @@
   <h2>Technical Skills</h2>
   <div class="panel">
     <p>Some languages and frameworks I have worked with.</p>
-    <ul class="tile block">
+    <ul class="block">
       <% if (locals.skills) {locals.skills.forEach(skill => { %>
       <li>
         <img class="tiny-image" src="<%= skill.imageUrl %>" />
